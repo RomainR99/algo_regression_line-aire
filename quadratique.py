@@ -141,3 +141,9 @@ if __name__ == "__main__":
 	#5 Partie E — Boucle d’entraînement
 	#5.1 E1 — Gradient Descent
 	#La RMSE doit-elle être strictement décroissante à chaque epoch ?
+
+	#aide ia pour terminer le tp La RMSE n’est pas forcément strictement décroissante à chaque epoch.
+	#Ce qui est important :la tendance globale de la RMSE doit diminuer au fil des epochs.
+	#On peut arrêter l’entraînement lorsque la RMSE ne diminue plus de manière significative (tendance globale).
+
+	# fin
