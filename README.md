@@ -1,4 +1,16 @@
-# Régressions (linéaire et quadratique) sur prix de maisons
+## Descente de gradient en ML (intuition)
+
+En machine learning, on veut ajuster les parametres d'un modele pour minimiser une fonction de perte (ex: MSE/RMSE) mesuree entre les predictions `y_hat` et les valeurs reelles `y`.
+
+La descente de gradient consiste a:
+
+1. calculer le gradient de la perte par rapport aux parametres du modele
+2. mettre a jour les parametres en suivant la direction qui reduit le plus la perte (avec un pas `learning_rate`, note `eta`)
+3. repeter sur plusieurs `epochs` jusqu'a convergence ou stabilisation
+
+Dans ce projet, on standardise aussi les variables (`surface`, `prix`) pour rendre la descente de gradient plus stable et plus efficace.
+
+# Regressions (linéaire et quadratique) sur prix de maisons
 
 Ce mini-projet contient des implémentations Python de régression par descente de gradient (avec visualisation) :
 
@@ -50,6 +62,3 @@ Selon le script :
 Tu peux ajuster `learning_rate` et `epochs` directement dans les scripts.
 La graine `random.seed(1)` sert à rendre les résultats reproductibles.
 
-## Remarque
-
-Le fichier `lineare.py` semble être une version "à refaire" (non utilisée comme script principal dans ce README).
